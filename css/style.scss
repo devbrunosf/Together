@@ -1,0 +1,1400 @@
+$gray: #333333;
+//$green: #2c8560;
+$green: #63e9b2;
+$bgreen: #5cc1af;
+$greenlgt: rgba(99, 233, 178, 0.5);
+$greendrk: #00b269;
+$noto: "Noto Sans JP";
+$raleway: "Raleway";
+$mont: "Montserrat";
+$poppins: "Poppins";
+$source: "Source Sans Pro";
+* {
+    margin: 0px;
+    border: none;
+    padding: 0px;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f5f5f5;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 60px;
+    background: transparent;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    left: 0;
+    top: 0;
+    font-family: $raleway;
+    div {
+        width: auto;
+        height: auto;
+        a {
+            color: $green;
+            font-size: 25px;
+            font-family: $raleway;
+        }
+    }
+    .hamburguer {
+        // Ícone Hamburguer
+        opacity: 0;
+    }
+    ul {
+        width: 490px;
+        height: auto;
+        //margin-right: 100px;
+        display: flex;
+        font-size: 17px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        li:nth-child(1) {
+            //como funciona?
+            width: 225px;
+            padding-left: 10px;
+            a {
+                color: $green;
+                font-size: 19px;
+                font-family: $raleway;
+            }
+        }
+        li:nth-child(2) {
+            // login
+            width: 120px;
+            height: 30px;
+            text-align: center;
+            line-height: 27px;
+            border: 1px solid $green;
+            border-radius: 1px;
+            a {
+                color: $green;
+                font-size: 17px;
+                font-family: $raleway;
+            }
+            &:hover {
+                background: $green;
+                border: 1px solid $green;
+                cursor: pointer;
+                transition: 0.5s;
+                a {
+                    color: #000;
+                    font-weight: 700;
+                }
+            }
+            &:not(:hover) {
+                transition: 0.5s;
+            }
+        }
+        li:nth-child(3) {
+            // Cadastrar
+            width: 120px;
+            height: 30px;
+            text-align: center;
+            line-height: 27px;
+            border: 1px solid $green;
+            border-radius: 1px;
+            background: $green;
+            margin-left: 35px;
+            a {
+                color: #000;
+                font-size: 17px;
+                font-family: $raleway;
+                font-weight: 700;
+            }
+            &:hover {
+                background: transparent;
+                border: 1px solid $green;
+                cursor: pointer;
+                transition: 0.5s;
+                a {
+                    color: $green;
+                    font-weight: 500;
+                }
+            }
+            &:not(:hover) {
+                transition: 0.5s;
+            }
+        }
+    }
+}
+
+.header {
+    height: 50px;
+    background: #f0f0f0;
+    transition: 0.5s;
+    div {
+        a {
+            color: #2c8560;
+        }
+    }
+    .hamburguer {
+        // Ícone Hamburguer
+        opacity: 0;
+    }
+    ul {
+        li:nth-child(1) {
+            // como funciona?
+            a {
+                color: #2c8560;
+            }
+        }
+        li:nth-child(2) {
+            // login
+            border: 1px solid #2c8560;
+            a {
+                color: #2c8560;
+            }
+            &:hover {
+                background-color: #2c8560;
+                border: 1px solid #2c8560;
+                a {
+                    color: #fff;
+                    font-weight: 500;
+                }
+            }
+            &:not(:hover) {
+                transition: 0.5s;
+            }
+        }
+        li:nth-child(3) {
+            // cadastrar
+            background-color: #2c8560;
+            border: 1px solid #2c8560;
+            a {
+                color: #fff;
+                font-weight: 500;
+            }
+            &:hover {
+                border: 1px solid #2c8560;
+                a {
+                    color: #2c8560;
+                    font-weight: 500;
+                }
+            }
+            &:not(:hover) {
+                transition: 0.5s;
+            }
+        }
+    }
+}
+
+.step1 {
+    //buscar projetos
+    width: 100vw;
+    height: 100vh;
+    margin: 0px 0px 0px;
+    background-image: url(../img/pexels-photo-2330137.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: baseline;
+        padding-top: 170px;
+        justify-content: center;
+        font-family: $raleway;
+        background-color: rgba(0, 0, 0, 0.5);
+        div {
+            width: 60vw;
+            height: auto;
+            letter-spacing: 3px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: 0.5s;
+            p {
+                width: 900px;
+                height: 230px;
+                font-size: clamp(2rem, 8.5vw, 3.5rem);
+                font-family: $poppins;
+                line-height: 100px;
+                color: $green;
+                text-align: center;
+                letter-spacing: 1px;
+                transition: 0.5s;
+            }
+            form {
+                width: 400px;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                align-items: center;
+                margin: 25px auto;
+                border-radius: 2px;
+                /*input {
+                    width: 100%;
+                    height: 35px;
+                    padding: 0px 10px;
+                    font-size: clamp(0.5rem, 2.5vw, 0.85rem);
+                    letter-spacing: 2px;
+                    font-family: $raleway;
+                    font-weight: 700;
+                    background-color: transparent;
+                    border-right: 1px solid $greenlgt;
+                    color: $green;
+                    &::placeholder {
+                        font-size: 12px;
+                        font-family: $raleway;
+                        color: $green;
+                    }
+                }*/
+                input {
+                    width: 300px;
+                    height: 35px;
+                    padding: 0px 10px;
+                    font-size: clamp(0.5rem, 2.5vw, 0.85rem);
+                    letter-spacing: 1px;
+                    font-family: $raleway;
+                    background-color: transparent;
+                    border: 1px solid $green;
+                    border-radius: 3px;
+                    color: $green;
+                    &::placeholder {
+                        font-size: 11px;
+                        font-family: $poppins;
+                        letter-spacing: 2px;
+                        color: $green;
+                        font-weight: 600;
+                    }
+                }
+                label {
+                    width: 50px;
+                    height: 40px;
+                    font-size: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                    i {
+                        color: $green;
+                    }
+                }
+                input[type="submit"] {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+
+/*
+.step2 {
+    //encontar parceiros
+    width: 100vw;
+    height: 80vh;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container {
+        width: 70vw;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: $raleway;
+        div {
+            width: 60vw;
+            height: auto;
+            font-size: clamp(2rem, 8.5vw, 3.5rem);
+            letter-spacing: 3px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            p {
+                color: #2c8560;
+            }
+            form {
+                width: 400px;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                align-items: center;
+                margin: 25px auto;
+                border-radius: 2px;
+                input {
+                    width: 300px;
+                    height: 39px;
+                    padding: 0px 10px;
+                    font-size: clamp(0.5rem, 2.5vw, 0.85rem);
+                    letter-spacing: 0px;
+                    font-family: $raleway;
+                    background-color: transparent;
+                    border: 1px solid #2c8560;
+                    border-radius: 2px;
+                    color: #2c8560;
+                    font-weight: 700;
+                    &::placeholder {
+                        font-size: 15px;
+                        font-family: $raleway;
+                        color: #2c8560;
+                    }
+                }
+                label {
+                    width: 70px;
+                    height: 40px;
+                    font-size: 25px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                    i {
+                        color: #2c8560;
+                    }
+                }
+                input[type="submit"] {
+                    display: none;
+                }
+            }
+        }
+    }
+} 
+*/
+
+.step2 {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    .cards {
+        width: 70%;
+        height: 75vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "quatro cinco seis";
+        position: relative;
+        column-gap: 5%;
+        padding: 1%;
+        div {
+            background-color: #fff;
+            box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+            display: flex;
+            flex-direction: column;
+            justify-content: baseline;
+            align-items: center;
+            position: relative;
+            border-radius: 10px;
+            #img {
+                width: 100%;
+                height: 150px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 10px 10px 0px 0px;
+                }
+            }
+            span {
+                font-family: $poppins;
+                color: $green;
+                font-weight: 700;
+            }
+            h1 {
+                font-family: $poppins;
+                font-size: 23px;
+                padding: 0px 25px;
+            }
+            p {
+                font-size: 15px;
+                font-family: $poppins;
+                font-weight: 700;
+                padding: 0px 25px;
+                color: #000;
+            }
+            a {
+                height: 50px;
+                width: 100%;
+                font-size: 17px;
+                font-family: $poppins;
+                font-weight: 700;
+                text-align: center;
+                line-height: 45px;
+                color: #000;
+                background-color: $green;
+                position: absolute;
+                bottom: 0%;
+                border-radius: 0px 0px 10px 10px;
+            }
+        }
+    }
+}
+
+aside {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid $greenlgt;
+    background-image: url(../img/pexels-photo-2330137.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    .container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.3);
+        font-family: $raleway;
+        line-height: 50px;
+        div {
+            width: 70vw;
+            height: auto;
+            font-size: clamp(1.3rem, 5.5vw, 3rem);
+            letter-spacing: 3px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            p {
+                color: $green;
+            }
+        }
+    }
+}
+
+footer {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid $greenlgt;
+    div {
+        background: $green;
+        color: #fff;
+        padding: 30px;
+        p {
+            font-size: 25px;
+            font-family: $raleway;
+            letter-spacing: 1px;
+            line-height: 40px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    header {
+        width: 100vw;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 30px;
+        background: transparent;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+        position: fixed;
+        left: 0;
+        top: 0;
+        font-family: $raleway;
+        transition: 0.5s;
+        div {
+            width: auto;
+            height: auto;
+            a {
+                color: $green;
+                font-size: 25px;
+                font-family: $raleway;
+            }
+        }
+        ul {
+            width: 450px;
+            height: auto;
+            //margin-right: 100px;
+            display: flex;
+            font-size: 17px;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            li:nth-child(1) {
+                //como funciona?
+                width: 225px;
+                padding-left: 10px;
+                a {
+                    color: $green;
+                    font-size: 19px;
+                    font-family: $raleway;
+                }
+            }
+            li:nth-child(2) {
+                // login
+                width: 120px;
+                height: 30px;
+                text-align: center;
+                line-height: 27px;
+                border: 1px solid $green;
+                border-radius: 1px;
+                a {
+                    color: $green;
+                    font-size: 17px;
+                    font-family: $raleway;
+                }
+                &:hover {
+                    background: $green;
+                    border: 1px solid $green;
+                    cursor: pointer;
+                    transition: 0.5s;
+                    a {
+                        color: #000;
+                        font-weight: 700;
+                    }
+                }
+                &:not(:hover) {
+                    transition: 0.5s;
+                }
+            }
+            li:nth-child(3) {
+                // Cadastrar
+                width: 120px;
+                height: 30px;
+                text-align: center;
+                line-height: 27px;
+                border: 1px solid $green;
+                border-radius: 1px;
+                background: $green;
+                margin-left: 35px;
+                a {
+                    color: #000;
+                    font-size: 17px;
+                    font-family: $raleway;
+                    font-weight: 700;
+                }
+                &:hover {
+                    background: transparent;
+                    border: 1px solid $green;
+                    cursor: pointer;
+                    transition: 0.5s;
+                    a {
+                        color: $green;
+                        font-weight: 500;
+    $gray: #333333;
+//$green: #2c8560;
+$green: #63e9b2;
+$bgreen: #5cc1af;
+$greenlgt: rgba(99, 233, 178, 0.5);
+$greendrk: #00b269;
+$noto: "Noto Sans JP";
+$raleway: "Raleway";
+$mont: "Montserrat";
+$poppins: "Poppins";
+$source: "Source Sans Pro";
+* {
+    margin: 0px;
+    border: none;
+    padding: 0px;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f5f5f5;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 60px;
+    background: transparent;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    left: 0;
+    top: 0;
+    font-family: $raleway;
+    div {
+        width: auto;
+        height: auto;
+        a {
+            color: $green;
+            font-size: 25px;
+            font-family: $raleway;
+        }
+    }
+    .hamburguer {
+        // Ícone Hamburguer
+        opacity: 0;
+    }
+    ul {
+        width: 490px;
+        height: auto;
+        //margin-right: 100px;
+        display: flex;
+        font-size: 17px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        li:nth-child(1) {
+            //como funciona?
+            width: 225px;
+            padding-left: 10px;
+            a {
+                color: $green;
+                font-size: 19px;
+                font-family: $raleway;
+            }
+        }
+        li:nth-child(2) {
+            // login
+            width: 120px;
+            height: 30px;
+            text-align: center;
+            line-height: 27px;
+            border: 1px solid $green;
+            border-radius: 1px;
+            a {
+                color: $green;
+                font-size: 17px;
+                font-family: $raleway;
+            }
+            &:hover {
+                background: $green;
+                border: 1px solid $green;
+                cursor: pointer;
+                transition: 0.5s;
+                a {
+                    color: #000;
+                    font-weight: 700;
+                }
+            }
+            &:not(:hover) {
+                transition: 0.5s;
+            }
+        }
+        li:nth-child(3) {
+            // Cadastrar
+            width: 120px;
+            height: 30px;
+            text-align: center;
+            line-height: 27px;
+            border: 1px solid $green;
+            border-radius: 1px;
+            background: $green;
+            margin-left: 35px;
+            a {
+                color: #000;
+                font-size: 17px;
+                font-family: $raleway;
+                font-weight: 700;
+            }
+            &:hover {
+                background: transparent;
+                border: 1px solid $green;
+                cursor: pointer;
+                transition: 0.5s;
+                a {
+                    color: $green;
+                    font-weight: 500;
+                }
+            }
+            &:not(:hover) {
+                transition: 0.5s;
+            }
+        }
+    }
+}
+
+.header {
+    height: 50px;
+    background: #f0f0f0;
+    transition: 0.5s;
+    div {
+        a {
+            color: #2c8560;
+        }
+    }
+    .hamburguer {
+        // Ícone Hamburguer
+        opacity: 0;
+    }
+    ul {
+        li:nth-child(1) {
+            // como funciona?
+            a {
+                color: #2c8560;
+            }
+        }
+        li:nth-child(2) {
+            // login
+            border: 1px solid #2c8560;
+            a {
+                color: #2c8560;
+            }
+            &:hover {
+                background-color: #2c8560;
+                border: 1px solid #2c8560;
+                a {
+                    color: #fff;
+                    font-weight: 500;
+                }
+            }
+            &:not(:hover) {
+                transition: 0.5s;
+            }
+        }
+        li:nth-child(3) {
+            // cadastrar
+            background-color: #2c8560;
+            border: 1px solid #2c8560;
+            a {
+                color: #fff;
+                font-weight: 500;
+            }
+            &:hover {
+                border: 1px solid #2c8560;
+                a {
+                    color: #2c8560;
+                    font-weight: 500;
+                }
+            }
+            &:not(:hover) {
+                transition: 0.5s;
+            }
+        }
+    }
+}
+
+.step1 {
+    //buscar projetos
+    width: 100vw;
+    height: 100vh;
+    margin: 0px 0px 0px;
+    background-image: url(../img/pexels-photo-2330137.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: baseline;
+        padding-top: 170px;
+        justify-content: center;
+        font-family: $raleway;
+        background-color: rgba(0, 0, 0, 0.5);
+        div {
+            width: 60vw;
+            height: auto;
+            letter-spacing: 3px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: 0.5s;
+            p {
+                width: 900px;
+                height: 230px;
+                font-size: clamp(2rem, 8.5vw, 3.5rem);
+                font-family: $poppins;
+                line-height: 100px;
+                color: $green;
+                text-align: center;
+                letter-spacing: 1px;
+                transition: 0.5s;
+            }
+            form {
+                width: 400px;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                align-items: center;
+                margin: 25px auto;
+                border-radius: 2px;
+                /*input {
+                    width: 100%;
+                    height: 35px;
+                    padding: 0px 10px;
+                    font-size: clamp(0.5rem, 2.5vw, 0.85rem);
+                    letter-spacing: 2px;
+                    font-family: $raleway;
+                    font-weight: 700;
+                    background-color: transparent;
+                    border-right: 1px solid $greenlgt;
+                    color: $green;
+                    &::placeholder {
+                        font-size: 12px;
+                        font-family: $raleway;
+                        color: $green;
+                    }
+                }*/
+                input {
+                    width: 300px;
+                    height: 35px;
+                    padding: 0px 10px;
+                    font-size: clamp(0.5rem, 2.5vw, 0.85rem);
+                    letter-spacing: 1px;
+                    font-family: $raleway;
+                    background-color: transparent;
+                    border: 1px solid $green;
+                    border-radius: 3px;
+                    color: $green;
+                    &::placeholder {
+                        font-size: 11px;
+                        font-family: $poppins;
+                        letter-spacing: 2px;
+                        color: $green;
+                        font-weight: 600;
+                    }
+                }
+                label {
+                    width: 50px;
+                    height: 40px;
+                    font-size: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                    i {
+                        color: $green;
+                    }
+                }
+                input[type="submit"] {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+
+/*
+.step2 {
+    //encontar parceiros
+    width: 100vw;
+    height: 80vh;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container {
+        width: 70vw;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: $raleway;
+        div {
+            width: 60vw;
+            height: auto;
+            font-size: clamp(2rem, 8.5vw, 3.5rem);
+            letter-spacing: 3px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            p {
+                color: #2c8560;
+            }
+            form {
+                width: 400px;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                align-items: center;
+                margin: 25px auto;
+                border-radius: 2px;
+                input {
+                    width: 300px;
+                    height: 39px;
+                    padding: 0px 10px;
+                    font-size: clamp(0.5rem, 2.5vw, 0.85rem);
+                    letter-spacing: 0px;
+                    font-family: $raleway;
+                    background-color: transparent;
+                    border: 1px solid #2c8560;
+                    border-radius: 2px;
+                    color: #2c8560;
+                    font-weight: 700;
+                    &::placeholder {
+                        font-size: 15px;
+                        font-family: $raleway;
+                        color: #2c8560;
+                    }
+                }
+                label {
+                    width: 70px;
+                    height: 40px;
+                    font-size: 25px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                    i {
+                        color: #2c8560;
+                    }
+                }
+                input[type="submit"] {
+                    display: none;
+                }
+            }
+        }
+    }
+} 
+*/
+
+.step2 {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    .cards {
+        width: 70%;
+        height: 75vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "quatro cinco seis";
+        position: relative;
+        column-gap: 5%;
+        padding: 1%;
+        div {
+            background-color: #fff;
+            box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+            display: flex;
+            flex-direction: column;
+            justify-content: baseline;
+            align-items: center;
+            position: relative;
+            border-radius: 10px;
+            #img {
+                width: 100%;
+                height: 150px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 10px 10px 0px 0px;
+                }
+            }
+            span {
+                font-family: $poppins;
+                color: $green;
+                font-weight: 700;
+            }
+            h1 {
+                font-family: $poppins;
+                font-size: 23px;
+                padding: 0px 25px;
+            }
+            p {
+                font-size: 15px;
+                font-family: $poppins;
+                font-weight: 700;
+                padding: 0px 25px;
+                color: #000;
+            }
+            a {
+                height: 50px;
+                width: 100%;
+                font-size: 17px;
+                font-family: $poppins;
+                font-weight: 700;
+                text-align: center;
+                line-height: 45px;
+                color: #000;
+                background-color: $green;
+                position: absolute;
+                bottom: 0%;
+                border-radius: 0px 0px 10px 10px;
+            }
+        }
+    }
+}
+
+aside {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid $greenlgt;
+    background-image: url(../img/pexels-photo-2330137.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    .container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.3);
+        font-family: $raleway;
+        line-height: 50px;
+        div {
+            width: 70vw;
+            height: auto;
+            font-size: clamp(1.3rem, 5.5vw, 3rem);
+            letter-spacing: 3px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            p {
+                color: $green;
+            }
+        }
+    }
+}
+
+footer {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid $greenlgt;
+    div {
+        background: $green;
+        color: #fff;
+        padding: 30px;
+        p {
+            font-size: 25px;
+            font-family: $raleway;
+            letter-spacing: 1px;
+            line-height: 40px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    header {
+        width: 100vw;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 30px;
+        background: transparent;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+        position: fixed;
+        left: 0;
+        top: 0;
+        font-family: $raleway;
+        transition: 0.5s;
+        div {
+            width: auto;
+            height: auto;
+            a {
+                color: $green;
+                font-size: 25px;
+                font-family: $raleway;
+            }
+        }
+        ul {
+            width: 450px;
+            height: auto;
+            //margin-right: 100px;
+            display: flex;
+            font-size: 17px;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            li:nth-child(1) {
+                //como funciona?
+                width: 225px;
+                padding-left: 10px;
+                a {
+                    color: $green;
+                    font-size: 19px;
+                    font-family: $raleway;
+                }
+            }
+            li:nth-child(2) {
+                // login
+                width: 120px;
+                height: 30px;
+                text-align: center;
+                line-height: 27px;
+                border: 1px solid $green;
+                border-radius: 1px;
+                a {
+                    color: $green;
+                    font-size: 17px;
+                    font-family: $raleway;
+                }
+                &:hover {
+                    background: $green;
+                    border: 1px solid $green;
+                    cursor: pointer;
+                    transition: 0.5s;
+                    a {
+                        color: #000;
+                        font-weight: 700;
+                    }
+                }
+                &:not(:hover) {
+                    transition: 0.5s;
+                }
+            }
+            li:nth-child(3) {
+                // Cadastrar
+                width: 120px;
+                height: 30px;
+                text-align: center;
+                line-height: 27px;
+                border: 1px solid $green;
+                border-radius: 1px;
+                background: $green;
+                margin-left: 35px;
+                a {
+                    color: #000;
+                    font-size: 17px;
+                    font-family: $raleway;
+                    font-weight: 700;
+                }
+                &:hover {
+                    background: transparent;
+                    border: 1px solid $green;
+                    cursor: pointer;
+                    transition: 0.5s;
+                    a {
+                        color: $green;
+                        font-weight: 500;
+                    }
+                }
+                &:not(:hover) {
+                    transition: 0.5s;
+                }
+            }
+        }
+    }
+    .step1 {
+        //buscar projetos
+        width: 100vw;
+        height: 100vh;
+        margin: 0px 0px 0px;
+        background-image: url(../img/pexels-photo-2330137.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: baseline;
+            padding-top: 180px;
+            justify-content: center;
+            font-family: $raleway;
+            background-color: rgba(0, 0, 0, 0.5);
+            div {
+                width: 60vw;
+                height: auto;
+                font-size: clamp(2rem, 8.5vw, 3.5rem);
+                letter-spacing: 3px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                transition: 0.5s;
+                p {
+                    width: 900px;
+                    height: 230px;
+                    font-size: clamp(2rem, 8.5vw, 3.5rem);
+                    font-family: $poppins;
+                    line-height: 100px;
+                    color: $green;
+                    text-align: center;
+                    letter-spacing: 1px;
+                    transition: 0.5s;
+                }
+                form {
+                    width: 400px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-end;
+                    align-items: center;
+                    margin: 25px auto;
+                    border-radius: 2px;
+                    input {
+                        width: 300px;
+                        height: 39px;
+                        padding: 0px 10px;
+                        font-size: clamp(0.5rem, 2.5vw, 0.85rem);
+                        letter-spacing: 0px;
+                        font-family: $raleway;
+                        background-color: transparent;
+                        border: 1px solid $green;
+                        border-radius: 3px;
+                        color: $green;
+                        &::placeholder {
+                            font-size: 12px;
+                            font-family: $poppins;
+                            letter-spacing: 3px;
+                            color: $green;
+                            font-weight: 600;
+                        }
+                    }
+                    label {
+                        width: 50px;
+                        height: 40px;
+                        font-size: 20px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
+                        i {
+                            color: $green;
+                        }
+                    }
+                    input[type="submit"] {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        transition: 0.5s;
+        div {
+            a {
+                color: $green;
+            }
+        }
+        .hamburguer {
+            // Ícone Hamburguer
+            opacity: 1;
+            position: absolute;
+            left: 87%;
+            cursor: pointer;
+            transition: .5s;
+            i {
+                font-size: 65px;
+                color: $green;
+            }
+        }
+        ul {
+            width: 150px;
+            height: 150px;
+            margin-top: 50px;
+            margin-right: -14px;
+            padding: 0px 15px 0px 0px;
+            position: relative;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            row-gap: 10px;
+            z-index: 1;
+            display: none;
+            transition: .5s;
+            li:nth-child(1) {
+                //como funciona?
+                width: 100px;
+                position: relative;
+                margin: 3px;
+                padding: 0px;
+                display: none;
+                a {
+                    color: $green;
+                }
+            }
+            li:nth-child(2) {
+                // login
+                width: 100px;
+                position: relative;
+                margin: 5px;
+                padding: 0px;
+                border: none;
+                border-bottom: 1px solid $green;
+                a {
+                    color: $green;
+                }
+                &:hover {
+                    background-color: transparent;
+                    border: none;
+                    border-bottom: 1px solid $green;
+                    a {
+                        color: $green;
+                        font-weight: 500;
+                    }
+                }
+                &:not(:hover) {
+                    transition: 0.5s;
+                }
+            }
+            li:nth-child(3) {
+                // Cadastrar
+                width: 100px;
+                position: relative;
+                margin: 5px;
+                padding: 0px;
+                background-color: transparent;
+                border: none;
+                border-bottom: 1px solid $green;
+                a {
+                    color: $green;
+                    font-weight: 500;
+                }
+                &:hover {
+                    background: transparent;
+                    border: none;
+                    border-bottom: 1px solid $green;
+                    a {
+                        color: $green;
+                    }
+                }
+                &:not(:hover) {
+                    transition: 0.5s;
+                }
+            }
+        }
+    }
+}

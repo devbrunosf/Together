@@ -1,0 +1,248 @@
+//font-family: 'KoHo', sans-serif;
+//font-family: 'Raleway', sans-serif;
+
+* {
+    margin: 0px;
+    border: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "KoHo", sans-serif;
+    outline: none;
+    font-weight: 900;
+}
+
+#container {
+    display: grid;
+    height: 20vh;
+    grid-template-columns: 25vw 25vw 25vw;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 5vh;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+
+    .crud {
+        text-align: center;
+        font-weight: 900;
+        color: black;
+        h1 {
+            font-size: 50px;
+            color: black;
+        }
+        a {
+            margin: 5px;
+            color: black;
+            font-weight: 900;
+        }
+    }
+}
+
+#container-add {
+    display: grid;
+    height: auto;
+    grid-template-columns: 25vw 25vw 25vw;
+    grid-template-areas: "clientes produtos fornecedores";
+    justify-content: center;
+    grid-gap: 5vh;
+    margin-top: 35px;
+
+    h1 {
+        font-size: 50px;
+        a {
+            color: black;
+        }
+    }
+
+    #add-clientes {
+        font-weight: 900;
+        grid-area: clientes;
+        display: none;
+        color: black;
+
+        form {
+            h2 {
+                margin-bottom: 5px;
+            }
+            label {
+                font-size: 17px;
+            }
+            input {
+                width: 100%;
+                height: 30px;
+                margin: 5px 0px;
+                padding: 5px;
+                font-weight: 900;
+                border: 1px solid black;
+            }
+        }
+    }
+
+    #add-produtos {
+        font-weight: 900;
+        grid-area: produtos;
+        display: none;
+
+        form {
+            h2 {
+                margin-bottom: 5px;
+            }
+            label {
+                font-size: 17px;
+            }
+            input {
+                width: 100%;
+                height: 30px;
+                margin: 5px 0px;
+                padding: 5px;
+                font-weight: 900;
+                border: 1px solid black;
+            }
+            textarea {
+                width: 100%;
+                height: 160px;
+                border: 1px solid black;
+            }
+        }
+    }
+
+    #add-fornecedores {
+        font-weight: 900;
+        grid-area: fornecedores;
+        display: none;
+
+        form {
+            h2 {
+                margin-bottom: 5px;
+            }
+            label {
+                font-size: 17px;
+        //font-family: 'KoHo', sans-serif;
+//font-family: 'Raleway', sans-serif;
+
+* {
+    margin: 0px;
+    border: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "KoHo", sans-serif;
+    outline: none;
+    font-weight: 900;
+}
+
+#container {
+    display: grid;
+    height: 20vh;
+    grid-template-columns: 25vw 25vw 25vw;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 5vh;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+
+    .crud {
+        text-align: center;
+        font-weight: 900;
+        color: black;
+        h1 {
+            font-size: 50px;
+            color: black;
+        }
+        a {
+            margin: 5px;
+            color: black;
+            font-weight: 900;
+        }
+    }
+}
+
+#container-add {
+    display: grid;
+    height: auto;
+    grid-template-columns: 25vw 25vw 25vw;
+    grid-template-areas: "clientes produtos fornecedores";
+    justify-content: center;
+    grid-gap: 5vh;
+    margin-top: 35px;
+
+    h1 {
+        font-size: 50px;
+        a {
+            color: black;
+        }
+    }
+
+    #add-clientes {
+        font-weight: 900;
+        grid-area: clientes;
+        display: none;
+        color: black;
+
+        form {
+            h2 {
+                margin-bottom: 5px;
+            }
+            label {
+                font-size: 17px;
+            }
+            input {
+                width: 100%;
+                height: 30px;
+                margin: 5px 0px;
+                padding: 5px;
+                font-weight: 900;
+                border: 1px solid black;
+            }
+        }
+    }
+
+    #add-produtos {
+        font-weight: 900;
+        grid-area: produtos;
+        display: none;
+
+        form {
+            h2 {
+                margin-bottom: 5px;
+            }
+            label {
+                font-size: 17px;
+            }
+            input {
+                width: 100%;
+                height: 30px;
+                margin: 5px 0px;
+                padding: 5px;
+                font-weight: 900;
+                border: 1px solid black;
+            }
+            textarea {
+                width: 100%;
+                height: 160px;
+                border: 1px solid black;
+            }
+        }
+    }
+
+    #add-fornecedores {
+        font-weight: 900;
+        grid-area: fornecedores;
+        display: none;
+
+        form {
+            h2 {
+                margin-bottom: 5px;
+            }
+            label {
+                font-size: 17px;
+            }
+            input {
+                width: 100%;
+                height: 30px;
+                margin: 5px 0px;
+                padding: 5px;
+                font-weight: 900;
+                border: 1px solid black;
+            }
+        }
+    }
+}

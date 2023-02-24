@@ -1,0 +1,226 @@
+* {
+  margin: 0px;
+  border: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "KoHo", sans-serif;
+  outline: none;
+  font-weight: 900;
+}
+
+#container {
+  display: -ms-grid;
+  display: grid;
+  height: 20vh;
+  -ms-grid-columns: 25vw 25vw 25vw;
+      grid-template-columns: 25vw 25vw 25vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-gap: 5vh;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+#container .crud {
+  text-align: center;
+  font-weight: 900;
+  color: black;
+}
+
+#container .crud h1 {
+  font-size: 50px;
+  color: black;
+}
+
+#container .crud a {
+  margin: 5px;
+  color: black;
+  font-weight: 900;
+}
+
+#container-add {
+  display: -ms-grid;
+  display: grid;
+  height: auto;
+  -ms-grid-columns: 25vw 25vw 25vw;
+      grid-template-columns: 25vw 25vw 25vw;
+      grid-template-areas: "clientes produtos fornecedores";
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-gap: 5vh;
+  margin-top: 35px;
+}
+
+#container-add h1 {
+  font-size: 50px;
+}
+
+#container-add h1 a {
+  color: black;
+}
+
+#container-add #add-clientes {
+  font-weight: 900;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: clientes;
+  display: none;
+  color: black;
+}
+
+#container-add #add-clientes form h2 {
+  margin-b* {
+  margin: 0px;
+  border: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "KoHo", sans-serif;
+  outline: none;
+  font-weight: 900;
+}
+
+#container {
+  display: -ms-grid;
+  display: grid;
+  height: 20vh;
+  -ms-grid-columns: 25vw 25vw 25vw;
+      grid-template-columns: 25vw 25vw 25vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-gap: 5vh;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+#container .crud {
+  text-align: center;
+  font-weight: 900;
+  color: black;
+}
+
+#container .crud h1 {
+  font-size: 50px;
+  color: black;
+}
+
+#container .crud a {
+  margin: 5px;
+  color: black;
+  font-weight: 900;
+}
+
+#container-add {
+  display: -ms-grid;
+  display: grid;
+  height: auto;
+  -ms-grid-columns: 25vw 25vw 25vw;
+      grid-template-columns: 25vw 25vw 25vw;
+      grid-template-areas: "clientes produtos fornecedores";
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-gap: 5vh;
+  margin-top: 35px;
+}
+
+#container-add h1 {
+  font-size: 50px;
+}
+
+#container-add h1 a {
+  color: black;
+}
+
+#container-add #add-clientes {
+  font-weight: 900;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: clientes;
+  display: none;
+  color: black;
+}
+
+#container-add #add-clientes form h2 {
+  margin-bottom: 5px;
+}
+
+#container-add #add-clientes form label {
+  font-size: 17px;
+}
+
+#container-add #add-clientes form input {
+  width: 100%;
+  height: 30px;
+  margin: 5px 0px;
+  padding: 5px;
+  font-weight: 900;
+  border: 1px solid black;
+}
+
+#container-add #add-produtos {
+  font-weight: 900;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: produtos;
+  display: none;
+}
+
+#container-add #add-produtos form h2 {
+  margin-bottom: 5px;
+}
+
+#container-add #add-produtos form label {
+  font-size: 17px;
+}
+
+#container-add #add-produtos form input {
+  width: 100%;
+  height: 30px;
+  margin: 5px 0px;
+  padding: 5px;
+  font-weight: 900;
+  border: 1px solid black;
+}
+
+#container-add #add-produtos form textarea {
+  width: 100%;
+  height: 160px;
+  border: 1px solid black;
+}
+
+#container-add #add-fornecedores {
+  font-weight: 900;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: fornecedores;
+  display: none;
+}
+
+#container-add #add-fornecedores form h2 {
+  margin-bottom: 5px;
+}
+
+#container-add #add-fornecedores form label {
+  font-size: 17px;
+}
+
+#container-add #add-fornecedores form input {
+  width: 100%;
+  height: 30px;
+  margin: 5px 0px;
+  padding: 5px;
+  font-weight: 900;
+  border: 1px solid black;
+}
+/*# sourceMappingURL=style.css.map */
